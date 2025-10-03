@@ -42,29 +42,38 @@
                 un problema dividiéndolo en versiones más pequeñas y manejables del mismo problema. Esta técnica permite abordar 
                 problemas complejos con soluciones elegantes y concisas, especialmente cuando el problema puede descomponerse en 
                 subproblemas del mismo tipo.
-                
+            </p>
+
+            <p>
                 Cómo funciona la recursividad
                 El elemento clave en una función recursiva es que debe tener al menos una condición base (o caso base), que es un
                 criterio claramente definido que termina la recursión. Sin esta condición base, la función podría llamarse a sí misma
                 indefinidamente, causando un desbordamiento de pila (stack overflow). La lógica general es que la función resuelve el
                 caso base directamente y, para cualquier otro caso, hace una llamada recursiva a sí misma con una versión reducida o 
                 simplificada del problema.
-                
+            </p>
+
+            <p>
                 La implementación recursiva sigue este patrón:
                 Caso base: 0!=1
                 Caso recursivo: n!=n×(n−1)!
                 Así, la función se llama a sí misma hasta llegar al caso base.
-                
+            </p>   
+
+            <p>
                 Beneficios
                 La recursividad simplifica la lógica para ciertos problemas, como los que implican estructuras jerárquicas o repetición
                 de patrones, tales como árboles, grafos, fractales y búsquedas.
                 Facilita la escritura de algoritmos que de otra manera serían muy complejos de implementar con bucles.
-                
+             </p>  
+
+            <p>
                 Desventajas
                 Puede ser menos eficiente en términos de uso de memoria y tiempo debido a la sobrecarga de múltiples llamadas a funciones
                 y almacenamiento de contextos en la pila.
                 Para problemas muy grandes sin optimización o sin un caso base claro, puede ocasionar errores por desbordamiento.
-                
+            </p>
+            <p>
                 Aplicaciones comunes
                 Recorrido y manipulación de estructuras de datos como árboles binarios y listas enlazadas.
                 Algoritmos de búsqueda y ordenamiento (como QuickSort y MergeSort).
@@ -80,19 +89,22 @@
                 términos de sí misma, es decir, se llama a sí misma para resolver un problema dividiéndolo en subproblemas más pequeños
                 y fácilmente manejables. Este método permite abordar problemas complejos mediante una definición simple y repetitiva 
                 basada en su propia estructura.
-                
+            </p>
+            <p>
                 Definición y características
                 Un proceso recursivo es aquel que contiene a su vez una versión más sencilla o reducida de sí mismo. Para evitar que esta
                 llamada se realice indefinidamente, la función recursiva debe contar con un caso base: una condición explícita en la que la
                 función deja de llamarse a sí misma y devuelve un resultado directo. Sin esta condición, el proceso recursivo podría caer
                 en un ciclo infinito.
-                
+            </p>
+            <p>
                 Existen varios tipos de recursividad:
                 Recursividad simple: donde la función se llama a sí misma una sola vez por ejecución, como en el cálculo del factorial.
                 Recursividad múltiple: donde la función se llama varias veces a sí misma durante la ejecución de una instancia, como en
                 la sucesión de Fibonacci.
                 Recursividad mutua: donde dos o más funciones se llaman cíclicamente entre sí.
-                
+            </p>
+            <p>
                 Aplicaciones de los procesos recursivos
                 Los procesos recursivos tienen aplicaciones que van desde la resolución de algoritmos matemáticos hasta la manipulación
                 estructural de datos complejos:
@@ -120,7 +132,8 @@
                 al permitir que una estructura esté definida en términos de sí misma o de estructuras similares. Esta propiedad es esencial
                 para muchas estructuras naturales y abstractas, como los árboles, listas enlazadas y grafos, que se pueden modelar y 
                 recorrer mediante procesos recursivos.
-                
+            </p>
+            <p>    
                 Características de la recursividad en estructuras de datos
                 Definición recursiva: Una estructura recursiva se define como un conjunto cuyos elementos pueden contener referencias a
                 otros elementos del mismo tipo. Por ejemplo, una lista enlazada está compuesta por un nodo que contiene un dato y una 
