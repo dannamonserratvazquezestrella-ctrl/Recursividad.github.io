@@ -115,7 +115,41 @@
                 cuándo usarla y combinarla con técnicas como la recursión con cola o la memorización para optimizar su rendimiento.
             </p>
 
+            <p>
+                La recursividad en estructuras de datos es una técnica clave que facilita la definición y manipulación de datos complejos
+                al permitir que una estructura esté definida en términos de sí misma o de estructuras similares. Esta propiedad es esencial
+                para muchas estructuras naturales y abstractas, como los árboles, listas enlazadas y grafos, que se pueden modelar y 
+                recorrer mediante procesos recursivos.
                 
+                Características de la recursividad en estructuras de datos
+                Definición recursiva: Una estructura recursiva se define como un conjunto cuyos elementos pueden contener referencias a
+                otros elementos del mismo tipo. Por ejemplo, una lista enlazada está compuesta por un nodo que contiene un dato y una 
+                referencia al siguiente nodo, que puede ser otra lista del mismo tipo.
+                Auto-similitud: Las estructuras recursivas presentan partes que se parecen a la estructura completa, como pasa en los
+                árboles donde cada subárbol es en sí un árbol.
+                Recorridos recursivos: Las funciones recursivas son ideales para recorrer estas estructuras, visitando nodos o elementos
+                mediante llamadas que exploran cada subestructura. Por ejemplo, en un árbol binario se pueden hacer recorridos en preorden,
+                inorden y postorden con funciones recursivas.
+                Facilitan operaciones complejas: Inserciones, eliminaciones, búsquedas y modificaciones en estas estructuras se pueden
+                implementar elegantemente con recursividad.
+                Contexto de ejecución: Cada llamada recursiva mantiene su propio contexto en la pila, permitiendo manejar múltiples niveles
+                de profundidad sin perder información.
+                Optimización: Aunque la recursividad es natural para estas estructuras, a veces puede ser optimizada o reemplazada por
+                técnicas iterativas o recursión de cola para reducir el uso de memoria.
+            </p>
+
+            <p>
+                La complejidad computacional en algoritmos recursivos se analiza considerando tanto el número de llamadas recursivas que
+                realiza el algoritmo como el costo computacional (tiempo o espacio) de cada una de esas llamadas. A diferencia de los
+                algoritmos iterativos, donde la complejidad suele calcularse sumando operaciones, en los recursivos se utilizan ecuaciones
+                de recurrencia para describir el tiempo de ejecución y resolverlas.
+                
+                Conceptos clave
+                Ecuaciones de recurrencia: Estas representan la complejidad del algoritmo en función del tamaño del problema 
+                n y de la complejidad de la llamada recursiva. Por ejemplo, para el cálculo factorial, la relación es 
+                T(n)=T(n−1)+1, donde el caso base es T(0)=1.
+            </p>
+        
         <section>
             <h3>Objetivo del Proyecto</h3>
             <p>
