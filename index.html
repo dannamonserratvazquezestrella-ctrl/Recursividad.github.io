@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
   <style>
-    /* Reset y fuente */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -30,14 +29,12 @@
       color: white;
     }
 
-    /* Animación del degradado */
     @keyframes gradientMove {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
 
-    /* Caja central */
     .overlay {
       background: rgba(0, 0, 0, 0.6);
       padding: 50px;
@@ -47,25 +44,21 @@
       animation: fadeIn 2s ease;
     }
 
-    /* Animación de aparición */
     @keyframes fadeIn {
       from {opacity: 0; transform: translateY(30px);}
       to {opacity: 1; transform: translateY(0);}
     }
 
-    /* Títulos */
-    
     h2 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       margin-bottom: 15px;
       font-weight: 600;
       letter-spacing: 2px;
       text-transform: uppercase;
     }
-    
 
     h3 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin: 10px 0;
       font-weight: 300;
     }
@@ -76,31 +69,11 @@
       font-weight: 600;
       transition: color 0.3s;
     }
-    /*
-    h3 a:hover {
+
+    /*h3 a:hover {
       color: #ffea80;
-    }
-*/
-    /* Contenido central */
-    .contenido {
-      padding: 40px;
-      text-align: center;
-    }
+    }*/
 
-    .docente, .equipo {
-      margin: 20px 0;
-    }
-
-    .equipo ul {
-      list-style: none;
-      padding: 0;
-    }
-    .equipo li {
-      margin: 5px 0;
-      font-weight: 300;
-    }
-
-    /* Footer */
     footer {
       background: #111;
       color: #ccc;
@@ -109,7 +82,7 @@
       font-size: 0.9rem;
     }
 
-        /* ---------------- MENU ---------------- */
+    /* ---------------- MENU ---------------- */
     .menu-btn {
       position: absolute;
       top: 20px;
@@ -159,11 +132,10 @@
     nav.active {
       right: 0;
     }
-    
   </style>
 </head>
 <body>
-   <!-- Botón menú -->
+    <!-- Botón menú -->
     <button class="menu-btn" onclick="toggleMenu()">
       <div></div>
       <div></div>
@@ -181,27 +153,28 @@
     <!-- Encabezado con título y subtítulo -->
     <header class="portada">
         <div class="overlay">
-            <h2><center><strong>Tecnológico de Estudios Superiores de Jocotitlán</strong></center></h2>
-            <h3><center><a href="Investigacion.html" >Recursividad y sus aplicaciones</a> </center> </h3>
-            <img src="recursividad.jpeg">
-            <h3><center>Estructura de Datos</center></h3>
-            <!-- <p><em> Página web sobre Recursividad y sus aplicaciones </em></p> -->
-            <h3> <center> Ingeniería en Sistemas Computacionales </center></h3>
+            <h2><strong>Tecnológico de Estudios Superiores de Jocotitlán</strong></h2>
+            <h3><a href="Investigacion.html">Recursividad y sus aplicaciones</a></h3>
+            <img src="recursividad.jpeg" alt="Recursividad" style="max-width:200px; border-radius:10px; margin:15px 0;">
+            <h3>Estructura de Datos</h3>
+            <h3>Ingeniería en Sistemas Computacionales</h3>
     
-          <p><center><strong>Docente:</strong></center>
-            <center> Dr. en C.I. Juan Alberto Antonio Velázquez </center></p>
+            <p><strong>Docente:</strong><br>
+            Dr. en C.I. Juan Alberto Antonio Velázquez</p>
         
-        <p><center><strong>Integrantes del equipo:</strong></center></p>
-            <center>Alexis Suarez Bacilio </center>
-            <center>Dana Monserrat Vázquez Estrella</center>
+            <p><strong>Integrantes del equipo:</strong><br>
+              Alexis Suarez Bacilio <br>
+              Dana Monserrat Vázquez Estrella
+            </p>
+    
+            <p>© 2025 Proyecto Académico - GitHub Pages</p>
+        </div>
+    </header>
+
     <script>
       function toggleMenu() {
         document.getElementById("menu").classList.toggle("active");
       }
     </script>
-          
-        <p><center>© 2025 Proyecto Académico - GitHub Pages</center></p>
-            </div>
-    </header>
 </body>
 </html>
