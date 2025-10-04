@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-    /* Fuente moderna y reinicio básico */
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f4f4f9;
-    color: #333;
-}
-
-/* Portada con fondo elegante */
-.portada {
-    position: relative;
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Superposición oscura */
-.overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 50px;
-    border-radius: 15px;
-    color: white;
-    width: 90%;
-    max-width: 900px;
-}
-
-/* Títulos */
-h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 1.3rem;
-    margin: 8px 0;
-    font-weight: 300;
-}
-
-h3 a {
-    color: #ffcc00;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-h3 a:hover {
-    color: #ffd633;
-}
-
-/* Contenido central */
-.contenido {
-    padding: 40px;
-    text-align: center;
-}
-
-.docente, .equipo {
-    margin: 20px 0;
-}
-
-.equipo ul {
-    list-style: none;
-    padding: 0;
-}
-.equipo li {
-    margin: 5px 0;
-    font-weight: 300;
-}
-
-/* Footer */
-footer {
-    background: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 0.9rem;
-    }
 <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividad</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Fuente moderna y reinicio básico */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        /* Portada con fondo elegante */
+        .portada {
+            position: relative;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Superposición oscura */
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 15px;
+            color: white;
+            width: 90%;
+            max-width: 900px;
+        }
+
+        /* Títulos */
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin: 8px 0;
+            font-weight: 300;
+        }
+
+        h3 a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        h3 a:hover {
+            color: #ffd633;
+        }
+
+        /* Contenido central */
+        .contenido {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .docente, .equipo {
+            margin: 20px 0;
+        }
+
+        .equipo ul {
+            list-style: none;
+            padding: 0;
+        }
+        .equipo li {
+            margin: 5px 0;
+            font-weight: 300;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursividad</title> 
