@@ -3,118 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recursividad</title>
+  <title>Recursividad - Investigación</title>
   <style>
     /* ----------- ESTILO GENERAL ----------- */
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Georgia', serif;
+      line-height: 1.8;
+      background-color: #f8f9fa;
       color: #333;
-      background: #fdfdfd;
     }
 
-    /* ----------- PORTADA CON ANIMACIÓN ----------- */
+    /* ----------- ENCABEZADO ----------- */
     .portada {
-      height: 100vh; /* ocupa toda la pantalla */
+      height: 40vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      color: white;
       text-align: center;
-      position: relative;
-      color: #444;
-      overflow: hidden;
-
-      /* Degradado animado con colores pastel */
-      background: linear-gradient(270deg, #f6d365, #fda085, #a1c4fd, #c2e9fb, #d4fc79, #96e6a1);
-      background-size: 1200% 1200%;
-      animation: pastelMove 25s ease infinite;
     }
 
-    /* Animación del fondo */
-    @keyframes pastelMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    /* ----------- CAJA DE TEXTO EN PORTADA ----------- */
     .overlay {
-      background: rgba(255, 255, 255, 0.6);
-      padding: 40px;
-      border-radius: 20px;
-      max-width: 800px;
-      animation: fadeIn 2s ease;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px 60px;
+      border-radius: 10px;
+      max-width: 900px;
     }
 
     .overlay h2 {
-      font-size: 2.5rem;
-      margin: 10px 0;
-      color: #222;
+      font-size: 2.8rem;
+      margin: 0;
     }
 
     .overlay h3 {
-      font-size: 1.5rem;
-      margin: 8px 0;
-      font-weight: normal;
-      color: #333;
+      font-size: 1.6rem;
+      margin: 10px 0;
+      font-weight: 400;
     }
 
     .overlay p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      color: #444;
+      font-style: italic;
+      font-size: 1rem;
     }
 
     /* ----------- CONTENIDO PRINCIPAL ----------- */
     main {
-      padding: 40px;
       max-width: 1000px;
       margin: auto;
-      line-height: 1.6;
+      padding: 40px 25px;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-top: -30px;
+      border-radius: 8px;
     }
 
     main h3 {
+      margin-top: 30px;
       color: #1d2671;
-      border-left: 5px solid #fda085;
-      padding-left: 10px;
+      border-left: 5px solid #c33764;
+      padding-left: 12px;
+    }
+
+    main p {
+      text-align: justify;
+      margin-bottom: 18px;
+    }
+
+    strong {
+      color: #c33764;
+    }
+
+    /* ----------- PIE DE PÁGINA ----------- */
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      background: #1d2671;
+      color: white;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   
-    <!-- Encabezado con título y subtítulo -->
-    <header class="portada">
-        <div class="overlay">
-            <h2>Recursividad</h2>
-            <h3>Investigación</h3>
-            <p><em>Proyecto académico de Estructura de Datos</em></p>
-        </div>
-    </header>
+  <!-- Encabezado con título y subtítulo -->
+  <header class="portada">
+    <div class="overlay">
+      <h2>Recursividad</h2>
+      <h3>Investigación</h3>
+      <p>Proyecto académico de Estructura de Datos</p>
+    </div>
+  </header>
 
-    <!-- Contenido -->
-    <main class="contenido">
-        <section>
-            <h3>¿Qué es?</h3>
-            <p>
-                La <strong>recursividad</strong> es una técnica fundamental en programación...
-            </p>
-            <!-- El resto de tu texto original aquí -->
-        </section>
+  <!-- Contenido -->
+  <main class="contenido">
+    <section>
+      <h3>¿Qué es?</h3>
+      <p>
+        La <strong>recursividad</strong> es una técnica fundamental en programación que consiste en que una función 
+        se llame a sí misma para resolver un problema, dividiéndolo en subproblemas cada vez más pequeños hasta alcanzar
+        un caso base que detiene el proceso. Este enfoque permite expresar soluciones complejas de manera clara,
+        estructurada y, en muchos casos, más corta que con métodos iterativos tradicionales. Gracias a la recursividad, 
+        es posible abordar problemas como el cálculo de factoriales, la serie de Fibonacci, el recorrido de estructuras
+        de datos (árboles, grafos) y la resolución de algoritmos clásicos como el de las Torres de Hanói o la búsqueda 
+        binaria. Además, fomenta el pensamiento lógico al obligar al programador a descomponer un problema en pasos más
+        simples, siguiendo el principio de "divide y vencerás". [1]
+      </p>
 
-        <section>
-            <h3>Objetivo del Proyecto</h3>
-            <p>
-                El objetivo de este sitio web es investigar, explicar y demostrar 
-                mediante ejemplos prácticos el uso de la recursividad en diferentes algoritmos clásicos 
-                como el <em>factorial</em>, la <em>serie de Fibonacci</em>, las <em>Torres de Hanói</em> y los <em>fractales</em>. 
-            </p>
-        </section>
-    </main>
+      <p>
+        De acuerdo a la página de NewMenton, la recursividad es un concepto que se indica cuando un método se llama a sí mismo. 
+        Cuando creamos un método recursivo debemos tener en cuenta que este tiene que terminar por lo que dentro del método 
+        debemos asegurarnos de que no se está llamando a sí mismo todo el rato, lo que quiere decir que el ciclo es finito. [2]
+      </p>
+
+      <p>
+        La recursividad es una técnica de programación muy importante en la que una función se llama a sí misma para resolver
+        un problema dividiéndolo en versiones más pequeñas y manejables del mismo problema. Esta técnica permite abordar 
+        problemas complejos con soluciones elegantes y concisas, especialmente cuando el problema puede descomponerse en 
+        subproblemas del mismo tipo.
+      </p>
+
+      <p>
+        <strong>Cómo funciona la recursividad:</strong>  
+        El elemento clave en una función recursiva es que debe tener al menos una condición base (o caso base), que es un
+        criterio claramente definido que termina la recursión. Sin esta condición base, la función podría llamarse a sí misma
+        indefinidamente, causando un desbordamiento de pila (<em>stack overflow</em>).
+      </p>
+
+      <p>
+        <strong>Ejemplo:</strong>  
+        Caso base: 0! = 1  
+        Caso recursivo: n! = n × (n − 1)!  
+      </p>   
+
+      <p>
+        <strong>Beneficios:</strong>  
+        Simplifica la lógica en estructuras jerárquicas, búsquedas y algoritmos como árboles, grafos o fractales.  
+      </p>  
+
+      <p>
+        <strong>Desventajas:</strong>  
+        Puede ser menos eficiente en memoria y tiempo por la sobrecarga de múltiples llamadas. Sin caso base claro, puede
+        ocasionar errores.  
+      </p>
+
+      <p>
+        <strong>Aplicaciones comunes:</strong>  
+        Recorridos en estructuras de datos (árboles binarios, listas enlazadas), algoritmos de búsqueda y ordenamiento
+        (QuickSort, MergeSort), resolución de problemas clásicos (Torres de Hanói, fractales, laberintos).
+      </p>
+    </section>
+
+    <section>
+      <h3>Definición y Características</h3>
+      <p>
+        Un proceso recursivo es aquel que contiene una versión más sencilla de sí mismo. Para evitar ciclos infinitos,
+        debe existir un <strong>caso base</strong> que detenga la recursión.
+      </p>
+      <p>
+        <strong>Tipos de recursividad:</strong>  
+        - Recursividad simple (ejemplo: factorial).  
+        - Recursividad múltiple (ejemplo: Fibonacci).  
+        - Recursividad mutua (dos o más funciones que se llaman entre sí).  
+      </p>
+    </section>
+
+    <section>
+      <h3>Objetivo del Proyecto</h3>
+      <p>
+        El objetivo de este sitio web es investigar, explicar y demostrar 
+        mediante ejemplos prácticos el uso de la recursividad en diferentes algoritmos clásicos 
+        como el <em>factorial</em>, la <em>serie de Fibonacci</em>, las <em>Torres de Hanói</em> y los <em>fractales</em>. 
+      </p>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    © 2025 Proyecto de Recursividad | Equipo académico
+  </footer>
+
 </body>
 </html>
