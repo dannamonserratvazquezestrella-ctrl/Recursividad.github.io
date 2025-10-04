@@ -1,86 +1,42 @@
-/* Estilo general */
-body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #f4f7fb;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividad</title> 
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado con título y subtítulo -->
+    <header class="portada">
+        <div class="overlay">
+            <h2>Tecnológico de Estudios Superiores de Jocotitlán</h2>
+            <h3><a href="Investigacion.html">Página web sobre Recursividad y sus aplicaciones</a></h3>
+            <h3>Estructura de Datos</h3>
+            <h3>Ingeniería en Sistemas Computacionales</h3>
+        </div>
+    </header>
 
-/* Portada con imagen de fondo */
-.portada {
-    background: url("../img/portada.jpg") no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-}
+    <main class="contenido">
+        <section class="docente">
+            <h4>Docente:</h4>
+            <p>Dr. en C.I. Juan Alberto Antonio Velázquez</p>
+        </section>
 
-.portada .overlay {
-    background-color: rgba(0, 0, 0, 0.6); /* Oscurecer fondo */
-    padding: 50px;
-    border-radius: 15px;
-}
+        <section class="equipo">
+            <h4>Integrantes del equipo:</h4>
+            <ul>
+                <li>Michelle Monserrat Garduño Angeles</li>
+                <li>Alexis Suarez Bacilio</li>
+                <li>Dana Monserrat Vázquez Estrella</li>
+            </ul>
+        </section>
+    </main>
 
-.portada h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.portada h2 {
-    font-size: 1.8em;
-    margin: 10px 0;
-}
-
-.portada p {
-    font-size: 1.2em;
-}
-
-/* Menú de navegación */
-.menu {
-    background-color: #003366;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-
-/* Contenido principal */
-.contenido {
-    padding: 40px;
-}
-
-.contenido h2 {
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-/* Pie de página */
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Proyecto Académico - GitHub Pages</p>
+    </footer>
+</body>
+</html>
