@@ -1,167 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recursividad - Investigación</title>
-  <style>
-    /* ----------- ESTILO GENERAL ----------- */
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      line-height: 1.8;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-
-    /* ----------- ENCABEZADO ----------- */
-    .portada {
-      height: 40vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #1d2671, #c33764);
-      color: white;
-      text-align: center;
-    }
-
-    .overlay {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 30px 60px;
-      border-radius: 10px;
-      max-width: 900px;
-    }
-
-    .overlay p {
-      font-style: italic;
-      font-size: 1rem;
-    }
-
-    /* ----------- CONTENIDO PRINCIPAL ----------- */
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 25px;
-      background: #fff;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      margin-top: -30px;
-      border-radius: 8px;
-    }
-
-    main h3 {
-      margin-top: 30px;
-      color: #1d2671;
-      border-left: 5px solid #c33764;
-      padding-left: 12px;
-    }
-
-    main p {
-      text-align: justify;
-      margin-bottom: 18px;
-    }
-
-    strong {
-      color: #c33764;
-    }
-
-    /* ----------- PIE DE PÁGINA ----------- */
-    footer {
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      background: #1d2671;
-      color: white;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación sobre Recursividad</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header h3 {
+            margin: 10px 0;
+            font-size: 1.8em;
+        }
+        header p {
+            font-style: italic;
+            font-size: 1.2em;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h3 {
+            color: #003366;
+            font-size: 1.8em;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        em {
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-  
-  <!-- Encabezado con título y subtítulo -->
-  <header class="portada">
-    <div class="overlay">
-      <h2>Recursividad</h2>
-      <h3>Investigación</h3>
-      <p>Proyecto académico de Estructura de Datos</p>
-    </div>
-  </header>
+    <header>
+        <h2>Recursividad</h2>
+        <h3>Investigación</h3>
+        <p><em>Proyecto académico de Estructura de Datos</em></p>
+    </header>
 
-  <!-- Contenido -->
-  <main class="contenido">
-    <section>
-      <h3>¿Qué es?</h3>
-      <p>
-        La <strong>recursividad</strong> es una técnica fundamental en programación que consiste en que una función 
-        se llame a sí misma para resolver un problema, dividiéndolo en subproblemas cada vez más pequeños hasta alcanzar
-        un caso base que detiene el proceso. Este enfoque permite expresar soluciones complejas de manera clara,
-        estructurada y, en muchos casos, más corta que con métodos iterativos tradicionales. Gracias a la recursividad, 
-        es posible abordar problemas como el cálculo de factoriales, la serie de Fibonacci, el recorrido de estructuras
-        de datos (árboles, grafos) y la resolución de algoritmos clásicos como el de las Torres de Hanói o la búsqueda 
-        binaria. Además, fomenta el pensamiento lógico al obligar al programador a descomponer un problema en pasos más
-        simples, siguiendo el principio de "divide y vencerás". [1]
-      </p>
+    <main>
+        <section>
+            <h3>Definición de Recursividad</h3>
+            <p>
+                La <strong>recursividad</strong> es una técnica fundamental en programación donde una función se llama a sí misma para resolver un problema. Este enfoque permite descomponer problemas complejos en subproblemas más sencillos, facilitando su resolución. Es esencial que cada función recursiva tenga un <em>caso base</em> que detenga la recursión y evite ciclos infinitos :contentReference[oaicite:0]{index=0}.
+            </p>
+        </section>
 
-      <p>
-        <strong>Cómo funciona la recursividad:</strong>  
-        El elemento clave en una función recursiva es que debe tener al menos una condición base (o caso base), que es un
-        criterio claramente definido que termina la recursión. Sin esta condición base, la función podría llamarse a sí misma
-        indefinidamente, causando un desbordamiento de pila (<em>stack overflow</em>).
-      </p>
+        <section>
+            <h3>Procedimientos Recursivos y sus Aplicaciones</h3>
+            <p>
+                Un <strong>procedimiento recursivo</strong> es aquel que se invoca a sí mismo para resolver una tarea. Esta técnica es útil en problemas que pueden dividirse en subproblemas similares. Ejemplos clásicos incluyen:
+            </p>
+            <ul>
+                <li><em>Factorial</em>: Cálculo del producto de todos los números enteros positivos hasta un número dado.</li>
+                <li><em>Serie de Fibonacci</em>: Secuencia donde cada número es la suma de los dos anteriores.</li>
+                <li><em>Torres de Hanói</em>: Juego que involucra mover discos entre varillas siguiendo ciertas reglas.</li>
+                <li><em>Fractales</em>: Figuras geométricas que se repiten a diferentes escalas.</li>
+            </ul>
+            <p>
+                Estas aplicaciones aprovechan la capacidad de la recursividad para simplificar la implementación y comprensión de algoritmos complejos :contentReference[oaicite:1]{index=1}.
+            </p>
+        </section>
 
-      <p>
-        <strong>Ejemplo:</strong>  
-        Caso base: 0! = 1  
-        Caso recursivo: n! = n × (n − 1)!  
-      </p>   
+        <section>
+            <h3>Características de la Recursividad</h3>
+            <p>
+                Las funciones recursivas poseen características distintivas:
+            </p>
+            <ul>
+                <li><strong>Autorreferencia</strong>: La función se llama a sí misma.</li>
+                <li><strong>Subproblemas</strong>: Cada llamada resuelve una versión más pequeña del problema original.</li>
+                <li><strong>Casos base</strong>: Condiciones que detienen la recursión.</li>
+                <li><strong>Descomposición</strong>: El problema se divide en partes más manejables.</li>
+            </ul>
+            <p>
+                Estas propiedades permiten que la recursividad sea una herramienta poderosa para resolver problemas de manera eficiente y elegante :contentReference[oaicite:2]{index=2}.
+            </p>
+        </section>
 
-      <p>
-        <strong>Beneficios:</strong>  
-        Simplifica la lógica en estructuras jerárquicas, búsquedas y algoritmos como árboles, grafos o fractales.  
-      </p>  
+        <section>
+            <h3>Complejidad Computacional en Algoritmos Recursivos</h3>
+            <p>
+                La <strong>complejidad computacional</strong> de un algoritmo recursivo se determina analizando el número de llamadas recursivas y el trabajo realizado en cada una. Se utilizan ecuaciones de recurrencia para modelar el comportamiento del algoritmo. Por ejemplo:
+            </p>
+            <pre>
+                T(n) = T(n-1) + O(1)
+            </pre>
+            <p>
+                Esta ecuación indica que el tiempo total T(n) es la suma del tiempo para resolver un subproblema de tamaño n-1 y el tiempo constante O(1) para combinar los resultados. Resolver estas ecuaciones ayuda a clasificar la complejidad en términos de notación Big O, como O(n), O(log n), O(n log n), entre otras :contentReference[oaicite:3]{index=3}.
+            </p>
+        </section>
+    </main>
 
-      <p>
-        <strong>Desventajas:</strong>  
-        Puede ser menos eficiente en memoria y tiempo por la sobrecarga de múltiples llamadas. Sin caso base claro, puede
-        ocasionar errores.  
-      </p>
-
-      <p>
-        <strong>Aplicaciones comunes:</strong>  
-        Recorridos en estructuras de datos (árboles binarios, listas enlazadas), algoritmos de búsqueda y ordenamiento
-        (QuickSort, MergeSort), resolución de problemas clásicos (Torres de Hanói, fractales, laberintos).
-      </p>
-    </section>
-
-    <section>
-      <h3>Definición y Características</h3>
-      <p>
-        Un proceso recursivo es aquel que contiene una versión más sencilla de sí mismo. Para evitar ciclos infinitos,
-        debe existir un <strong>caso base</strong> que detenga la recursión.
-      </p>
-      <p>
-        <strong>Tipos de recursividad:</strong>  
-        <ul>
-        <li>Recursividad simple (ejemplo: factorial).</li> 
-        <li>Recursividad múltiple (ejemplo: Fibonacci).</li>  
-        <li>Recursividad mutua (dos o más funciones que se llaman entre sí).</li>
-        </ul>
-      </p>
-    </section>
-
-    <section>
-      <h3>Objetivo del Proyecto</h3>
-      <p>
-        El objetivo de este sitio web es investigar, explicar y demostrar 
-        mediante ejemplos prácticos el uso de la recursividad en diferentes algoritmos clásicos 
-        como el <em>factorial</em>, la <em>serie de Fibonacci</em>, las <em>Torres de Hanói</em> y los <em>fractales</em>. 
-      </p>
-    </section>
-  </main>
-
-  <!-- Pie de página -->
-  <footer>
-    © 2025 Proyecto de Recursividad | Equipo académico
-  </footer>
-
+    <footer>
+        <p>&copy; 2025 Proyecto de Estructura de Datos</p>
+    </footer>
 </body>
 </html>
