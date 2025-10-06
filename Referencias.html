@@ -4,46 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Referencias de los Conceptos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
       margin: 0;
-      padding: 20px;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(270deg, #1d2671, #c33764, #0099f7, #00c9ff);
+      background-size: 800% 800%;
+      animation: gradientMove 18s ease infinite;
+      color: #fff;
+      line-height: 1.8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
 
     h1 {
+      font-size: 2.3rem;
       text-align: center;
-      color: #222;
+      color: #ffd633;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+      margin-bottom: 30px;
     }
 
     .referencias {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 900px;
+      width: 90%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .referencias:hover {
+      transform: translateY(-5px);
     }
 
     .referencias ul {
-      list-style-type: none;
-      padding-left: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
     .referencias li {
-      margin-bottom: 12px;
+      background: rgba(255, 255, 255, 0.15);
+      border-left: 5px solid #ffd633;
+      margin-bottom: 20px;
+      padding: 15px 20px;
+      border-radius: 10px;
+      color: #f0f0f0;
       text-align: justify;
+      transition: background 0.3s ease;
+    }
+
+    .referencias li:hover {
+      background: rgba(255, 255, 255, 0.25);
     }
 
     .referencias a {
-      color: #0056b3;
+      color: #00ffff;
       text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
 
     .referencias a:hover {
+      color: #ffd633;
       text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ddd;
     }
   </style>
 </head>
@@ -53,42 +97,43 @@
   <div class="referencias">
     <ul>
       <li>[1] “FAEDIS”. Apache HTTP Server Test Page powered by Linux. [En línea]. Disponible: 
-        <a href="http://virtual.umng.edu.co/distancia/ecosistema/odin/odin_desktop.php?path=Li4vb3Zhcy
-          9pbmdlbmllcmlhX2luZm9ybWF0aWNhL2VzdHJ1Y3R1cmFfZGVfZGF0b3MvdW5pZGFkXzIv" target="_blank">
+        <a href="http://virtual.umng.edu.co/distancia/ecosistema/odin/odin_desktop.php?path=Li4vb3Zhcy9pbmdlbmllcmlhX2luZm9ybWF0aWNhL2VzdHJ1Y3R1cmFfZGVfZGF0b3MvdW5pZGFkXzIv" target="_blank">
           https://www3.gobiernodecanarias.org/medusa/ecoblog/mrodperv/fractales/definicion-de-fractal
         </a>. [Accedido: 3-oct-2025].
       </li>
-      <li>[2] “Khan Academy”. Khan Academy. Recusividad en la vida real. [En línea]. Disponible:  http://v
-        <a href="https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/
-          recursion" target="_blank">
-          https://www3.gobiernodecanarias.org/medusa/ecoblog/mrodperv/fractales/definicion-de-fractal
+
+      <li>[2] “Khan Academy”. Khan Academy. Recursividad en la vida real. [En línea]. Disponible:  
+        <a href="https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion" target="_blank">
+          https://es.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion
         </a>. [Accedido: 3-oct-2025].
       </li>
-      <li>[3] “Procedimientos recursivos - Visual Basic”. Microsoft Learn: Build skills that open doors in your career.
-        [En línea]. Disponible: 
-        <a href="https://www3.gobiernodecanarias.org/medusa/ecoblog/mrodperv/fractales/definicion-de-fractal" target="_blank">
-          https://www3.gobiernodecanarias.org/medusa/ecoblog/mrodperv/fractales/definicion-de-fractal
+
+      <li>[3] “Procedimientos recursivos - Visual Basic”. Microsoft Learn. [En línea]. Disponible: 
+        <a href="https://learn.microsoft.com/es-es/dotnet/visual-basic/programming-guide/language-features/procedures/recursive-procedures" target="_blank">
+          https://learn.microsoft.com/es-es/dotnet/visual-basic/programming-guide/language-features/procedures/recursive-procedures
         </a>. [Accedido: 3-oct-2025].
       </li>
-      <li>[4] “Recursividad – acervo para el mejoramiento del aprendizaje de alumnos de ingeniería, en Inteligencia Artificial”.
-        [En línea]. Disponible:  
+
+      <li>[4] “Recursividad – Acervo para el mejoramiento del aprendizaje de alumnos de ingeniería, en Inteligencia Artificial”. UNAM. [En línea]. Disponible:  
         <a href="https://virtual.cuautitlan.unam.mx/intar/?page_id=185" target="_blank">
-          https://www3.gobiernodecanarias.org/medusa/ecoblog/mrodperv/fractales/definicion-de-fractal
+          https://virtual.cuautitlan.unam.mx/intar/?page_id=185
         </a>. [Accedido: 3-oct-2025].
       </li>
-      <li>[5] Sitio Web Docente del Prof. Edgardo AdriÃ¡n Franco MartÃ­nez en el IPN. [En línea] Disponible: 
+
+      <li>[5] “Análisis de Algoritmos”. Prof. Edgardo Adrián Franco Martínez. IPN. [En línea]. Disponible: 
         <a href="https://docencia.eafranco.com/materiales/analisisdealgoritmos/06/Tema06.pdf" target="_blank">
-          https://www3.gobiernodecanarias.org/medusa/ecoblog/mrodperv/fractales/definicion-de-fractal
+          https://docencia.eafranco.com/materiales/analisisdealgoritmos/06/Tema06.pdf
         </a>. [Accedido: 3-oct-2025].
       </li>
+
       <li>[6] “Algoritmo recursivo: ejemplos, complejidad, tipos, usos”. Tecnología WsCube. [En línea]. Disponible:  
-        <a href=" https://www-wscubetech-com.translate.goog/resources/dsa/recursive-algorithm?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_
-          hl=es&amp;_x_tr_pto=tc" target="_blank">
-          https://www3.gobiernodecanarias.org/medusa/ecoblog/mrodperv/fractales/definicion-de-fractal
+        <a href="https://www-wscubetech-com.translate.goog/resources/dsa/recursive-algorithm?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" target="_blank">
+          https://www-wscubetech-com.translate.goog/resources/dsa/recursive-algorithm
         </a>. [Accedido: 3-oct-2025].
       </li>
     </ul>
   </div>
+
+  <footer>© 2025 Proyecto Académico - Referencias sobre Recursividad</footer>
 </body>
 </html>
-
